@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 40%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        h1 {
+            text-align: center;
+            background-color: orangered;
+        }
+
+        form {
+            overflow: hidden;
+        }
+
+        label {
+            width: 10%;
+            float: left;
+            text-align: right;
+            margin-right: 10px;
+           
+        }
+
+    </style>
+</head>
+<body>
+    <form action="/taoform.php" name="taoform">
+        <fieldset>
+            <h1>SỞ THÍCH CỦA BẠN</h1>
+         
+            <label for="yourname">Họ và tên</label>
+            <input type="text"id="yourname"name="yourname"><br><br>
+            <label for ="email">Email</label>
+            <input type="text"id="email"name="email">
+         <div style="margin: 20px;">
+            <label style="text-align: left; margin-bottom: 40px;">Sở Thích</label>
+            <div id="row">
+                <input type="checkbox"name="hobby"value="thethao">Thể thao
+                <input type="checkbox"name="hobby"value="amnhac">Âm nhạc
+                <input type="checkbox"name="hobby"value="docsach">Đọc sách
+            </div>
+            <div id="row">
+                <input type="checkbox"name="hobby"value="luotweb">Lướt web
+                <input type="checkbox"name="hobby"value="choigame">Chơi game
+                <input type="checkbox"name="hobby"value="dienanh">Điện ảnh
+        </div id="row">
+            <input type="checkbox"name="hobby"value="dulich">Du lịch
+        </div>
+        <div style="margin-left: 100px;">
+            <input style="text-align: center; background-color: wheat ;" type="submit form"value="Gửi thông tin">
+            <input style="text-align: center; background-color: wheat;" type="reset form"value="Nhập lại">
+        </div>
+
+        </fieldset>
+
+    </form>
+</body>
+</html>

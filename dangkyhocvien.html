@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            width: 70%;
+            margin: auto;
+        }
+
+        h1 {
+            background-color: #90e0ef;
+            color: blue;
+        }
+
+        label {
+            width: 10%;
+            float: left;
+        }
+        
+        div {
+            padding: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="/taoform.php" name="taoform" style="background-color: #fcbf49;">
+        <fieldset style="padding: 50px;">
+            <h1>ĐĂNG KÝ HỌC VIÊN</h1>
+            <div>
+                <label for="yourname">Họ và tên:</label>
+            <input style="width: 40%" type="text"id="yourname"name="yourname" >
+            </div>
+            <div>
+                <label for="dob">Ngày sinh</label>
+                <input type="text"id="dob"name="dob">
+            </div>
+            <div style="margin-left: 10% ;">
+                <input type="radio"name="gender"value="nam">Nam
+                <input type="radio"name="gender"value="nu">Nữ
+            </div>
+            <div>
+            <label for="address">Địa chỉ</label>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+              <label for="class">lớp</label>
+              <select name="class" id="class" >
+                  <option value="text">-Chọn lớp-</option>
+                  <option value="cao dang">Cao đẳng</option>
+                  <option value="dai hoc">Đại học</option>
+              </select>
+            </div>
+        
+          <div>
+                <label for ="email">Email:</label>
+                <input type="text"id="email"name="email">
+          </div>
+            <div>
+                <label for="phone">Điện thoại</label>
+                <input type="text"id="phone"name="phone">
+            </div>
+
+            <div style="margin-left: 10% ; " >
+                <input style="text-align: center;" type="Submit Form" value="Đăng ký">
+                <input style="text-align: center;" type="Reset Form" value="Nhập lại">
+            </div>
+
+
+
+        </fieldset>
+
+    </form>
+</body>
+</html>
